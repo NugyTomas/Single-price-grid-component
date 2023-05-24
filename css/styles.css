@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+body {
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(204, 43%, 93%);
+    letter-spacing: 0.02rem;
+    color: white;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: 330px 290px 305px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.container {
+    padding: 3% 6% 4% 6%;
+}
+
+.community_container {
+    background-color: white;
+    font-weight: 400;
+}
+
+.community_container h1 {
+    color: hsl(179, 62%, 43%);
+    filter: brightness(95%);
+    padding-bottom: 2%;
+}
+
+.community_container h2 {
+    color: hsl(71, 73%, 54%);
+    font-size: 1.3rem;
+    filter: brightness(95%);
+    padding-bottom: 3%;
+    font-weight: 400;
+}
+
+.community_container p {
+    color: hsl(218, 22%, 67%);
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.subscription_container {
+    background-color: hsl(179, 62%, 43%);
+    font-weight: 400;
+}
+
+.subscription_container h1 {
+    font-weight: 400;
+}
+
+.subscription_container h2 {
+    font-size: 2.5rem;
+    margin: 2% 0 0 0;
+    padding-bottom: 0;
+    display:flex;
+}
+
+.month {
+    font-size: 1.2rem;
+    color: hsl(204, 43%, 93%);
+    font-weight: 400;
+    padding-left: 4%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.subscription_container p {
+    font-size: 1.2rem;
+    padding-bottom: 5%;
+    margin-top: 3%;
+}
+
+button {
+    width: 100%;
+    height: 23%;
+    background-color: hsl(71, 73%, 54%);
+    filter: brightness(104%);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Karla', sans-serif;
+}
+
+.features_container {
+    background-color: #4ABEBD;
+    filter: brightness(105%);
+}
+
+.features_container h1 {
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    color: hsl(204, 43%, 93%);
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+
+/* DISPLAY FOR DESKTOP */
+@media (min-width: 880px) {
+    .card {
+        grid-template-columns: 400px 400px;
+        grid-template-rows: 270px 330px;
+    }
+
+    .community_container {
+        grid-area: 1/1/2/3;
+    }
+
+    .community_container h2 {
+        padding-bottom: 0%;
+        margin-bottom: 2%;
+    }
+
+    .community_container p {
+        font-size: 1.2rem;
+        margin-top: 0%;
+    }
+
+    .subscription_container {
+        padding: 6% 11% 5% 11%;
+    }
+
+    .subscription_container h2 {
+        font-size: 2.5rem;
+        margin: 2% 0 4% 0;
+        padding-bottom: 0;
+       
+    }
+
+    .month {
+        padding-left: 5%;
+        font-size: 1.3rem;
+    }
+
+    .subscription_container p {
+        padding-bottom: 6%;
+    }
+
+    button {
+        height: 21%;
+        font-size: 1.2rem;
+    }
+
+    .features_container {
+        padding: 6% 11% 4% 11%;
+    }
+}
